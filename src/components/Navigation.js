@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import logo_ikonka from '../assets/images/logo-ikonka.png'
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -14,7 +14,7 @@ class Navigation extends Component {
                             <div className='col-5'>
                                 <div className='navigation__logo'>
                                     <div className='logo__image'>
-                                        <img className='foto-size' src="../../../images/logo-ikonka.png" />
+                                        <img className='foto-size' alt="obrazek" src={logo_ikonka} />
                                     </div>
                                     <span className='logo__text'>Chatbot Universe</span>
                                 </div>
