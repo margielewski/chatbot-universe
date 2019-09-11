@@ -1,8 +1,7 @@
-@import "settings/colors";
+@import "./colors";
 
 body {
     font-family: 'Saira Condensed', 'Arial', sans-serif;
     background-color: $background-color1;
-    color: $text-color-black; 
+    color: $text-color-black;
 }
-
