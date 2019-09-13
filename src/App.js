@@ -5,7 +5,7 @@ import './main.scss';
 
 // Router
 import {
-  HashRouter,
+  BrowserRouter,
   Route,
   // Link,
   Switch,
@@ -23,12 +23,12 @@ class App extends Component {
   render() {
 
     return (
-      <HashRouter>
+      <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
           {/* <Route path='/projects/:id' component={Project} /> */}
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     )
   }
 }
