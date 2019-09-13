@@ -1,0 +1,26 @@
+.Choice {
+    // position: relative; 
+    height: 90vh;
+    width: 100%;
+    margin-top: 10vh; 
+
+    background-image: url('../../assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+   
+    .Mobile {
+  
+        height: 150%;
+        width: 50%; 
+
+        background-image: url('../../assets/images/iPhone-6S-Space-Gray-copy.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}

@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 import './main.scss';
-
-
 
 // Router
 import {
   HashRouter,
   Route,
-  Link,
+  // Link,
   Switch,
-  NavLink,
+  // NavLink,
 } from 'react-router-dom';
 
 // Components
 
 import Navigation from './components/Navigation';
+import Choice from "./components/Choice";
+import MMdE from "./components/MMdE";
 
 
 class App extends Component {
@@ -39,14 +39,11 @@ class Home extends Component {
     return (
       <>
         <Navigation />
+        <Choice />
+        <MMdE />
       </>
     )
   }
 }
-
-
-
-
-
 
 export default App;
