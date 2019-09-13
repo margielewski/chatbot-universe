@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.776476d0.chunk.css",
-    "main.js": "/static/js/main.f66873ff.chunk.js",
-    "main.js.map": "/static/js/main.f66873ff.chunk.js.map",
+    "main.css": "/static/css/main.9291ebe8.chunk.css",
+    "main.js": "/static/js/main.b6aa28dd.chunk.js",
+    "main.js.map": "/static/js/main.b6aa28dd.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.d4554acb.js",
     "runtime~main.js.map": "/static/js/runtime~main.d4554acb.js.map",
-    "static/js/2.c39a19d9.chunk.js": "/static/js/2.c39a19d9.chunk.js",
-    "static/js/2.c39a19d9.chunk.js.map": "/static/js/2.c39a19d9.chunk.js.map",
+    "static/js/2.3ee54845.chunk.js": "/static/js/2.3ee54845.chunk.js",
+    "static/js/2.3ee54845.chunk.js.map": "/static/js/2.3ee54845.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5143328dbf701a2d863c0c469269b1b6.js": "/precache-manifest.5143328dbf701a2d863c0c469269b1b6.js",
+    "precache-manifest.46dbb3bde92b63ecae51077e751224ef.js": "/precache-manifest.46dbb3bde92b63ecae51077e751224ef.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.776476d0.chunk.css.map": "/static/css/main.776476d0.chunk.css.map"
+    "static/css/main.9291ebe8.chunk.css.map": "/static/css/main.9291ebe8.chunk.css.map",
+    "static/media/main.scss": "/static/media/bg.da00eace.jpg",
+    "static/media/iPhone-6S-Space-Gray-copy.png": "/static/media/iPhone-6S-Space-Gray-copy.399bba33.png"
   }
 }
