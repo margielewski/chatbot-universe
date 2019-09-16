@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import ReactDOM from 'react-dom';
 
 // podpięcie font-awesome
-// import '../node_modules/font-awesome/css/font-awesome.min.css';
+import './fonts/fontawesome/fontawesome-free-5.10.1-web/css/fontawesome.min.css';
 
 import './main.scss';
 
