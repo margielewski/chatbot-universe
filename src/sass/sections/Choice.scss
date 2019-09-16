@@ -1,26 +1,120 @@
+.Choice__bgc {
+    background-image: url('../../assets/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; 
+}
+
 .Choice {
-    // position: relative; 
-    height: 90vh;
+    // position: absolute; 
+    height: 75vh;
     width: 100%;
     margin-top: 10vh; 
 
-    background-image: url('../../assets/images/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-image: url('../../assets/images/bg2.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 
     display: flex;
     justify-content: center; 
     overflow: hidden;
+    
    
     .Mobile {
-  
-        height: 150%;
-        width: 50%; 
+        // border: 2px solid orange;
+        margin-top: 13px;  
+        display: flex;
+        justify-content: center; 
+
+        height: 100%;
+        width: 350px; 
 
         background-image: url('../../assets/images/iPhone-6S-Space-Gray-copy.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+
+        .Mobile__chat {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            
+            margin-top: 160px; 
+            
+            width: 70%;
+            height: 100%;
+            // border: 2px solid red; 
+            position: relative; 
+
+            .chat__logo {
+                position: absolute;
+                top: 0;
+                left: -14px;
+                height: 27px;  
+            }
+            .chat__custom-chat {
+                position: fixed;
+                width:60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px; 
+            }
+
+            .chat__q1, .chat__q2, .chat__a1, .chat__a2 {
+                font-family: 'Arial', sans-serif;
+                font-size: 1.1rem;
+                line-height: 1.4rem;  
+                letter-spacing: 0.4px; 
+
+                display: block; 
+                width: 200px; 
+                background-color: #dddddd; 
+
+                border-radius: 5px;
+                margin-top: 5px; 
+                padding: 0 10px; 
+            }
+
+            .chat__q1 {
+                // margin-top: 215px;
+            }
+            .chat__q1, .chat__q2 {
+                position: relative;
+                padding: 10px 10px; 
+                .a1__rocket, .a1__rocket {
+                    height: 25px; 
+                    position: absolute;
+                    bottom: 3px;  
+                }
+            }
+            .chat__a1 {
+                color: $text-color-blue;
+                border:2px solid $text-color-blue;
+            }
+            .chat__q2 {
+                margin-top: 20px; 
+            }
+            .chat__a2 {
+                color: $text-color-violet;
+                border:2px solid $text-color-violet;
+
+            }
+            .chat__a1, .chat__a2 {
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                line-height: 40px;
+
+                background-color: $background-color1;
+                font-family: 'Muli', 'Arial', sans-serif;
+                font-weight: bold;  
+                .a1__rocket, .a1__rocket  {
+                    position: absolute; 
+                    right: 5px; 
+                    height: 40px; 
+                } 
+            }
+        }
     }
 }

@@ -2,18 +2,21 @@
     height: 100vh;
     min-height: 100vh;
     margin-top: $margin-sections; 
-    
 }
 .MMdE__description {
-    margin-bottom: $margin-sections;
+    margin-bottom: 7vh;
 
     .MMdE__title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        // font-size: 22px; 
+
+        font-weight: bold; 
         color: $text-color-blue; 
-        padding-bottom: 10px; 
+        padding-bottom: 6px; 
     }
     .MMdE__subtitle {
         font-size: 1.6rem; 
+        margin-bottom: 60px; 
     }
 
     .MMdE__title, .MMdE__subtitle {
@@ -22,47 +25,94 @@
 }
 
 // 
-.Scheme-first, .Scheme-second {
+.Scheme-first, .Scheme-second, .Scheme-third {
+    position: relative; 
     display: flex;
     flex-direction: column; 
     align-items: center;
 
+    .Scheme-first__arrows, .Scheme-second__arrows, .Scheme-third__arrows {
+        color: $text-color-blue;
+        position: absolute;
+
+        .fa:nth-of-type(2) {
+            transform: translateX(-2px)
+        }
+    }
     // border: 1px solid black; 
+}
+.Scheme-first {
+    margin-bottom: -40px;
+    .Scheme-first__arrows {
+        top: 195px;  
+    }
 }
 
 .Scheme-second {
     align-items: flex-end;
-    margin-right: 70px; 
+    margin-right: 8px!important; 
+
+    .Scheme-first__arrows {
+        top: -1px!important; 
+        right: 31px!important; 
+        transform: rotate(130deg)  
+    }
 
     // border: 1px solid green; 
+    .foto__obramowanie {
+        transform: rotate(240deg);
+    }
 }
 
 .Scheme-third {
     align-items: flex-start;
-    margin-left: 70px; 
+    margin-left: 8px!important; 
+
+    .Scheme-first__arrows {
+        top: -1px!important; 
+        left: 31px!important; 
+        transform: rotate(40deg)  
+    }
 
     // border: 1px solid yellow; 
+    .foto__obramowanie {
+        transform: rotate(120deg);
+    }
 } 
+
+.Scheme {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    // border: 1px solid red;
+}
 
 .Scheme__description {
     display: inline-block;
-    width: 120px;
+    width: 130px;
     height: 60px;
     text-align: center; 
 
-    // border: 1px solid red; 
+    letter-spacing: 0.02rem;   
+    margin-bottom: -20px;
+    margin-top: -38px!important; 
+
+    // border: 1px solid blue; 
 }
 
 .Scheme__foto {
-    // border: 1px solid blue; 
+    position: relative;  
+    height: 160px;
+    width: 160px; 
 
-    height: 150px;
-    width: 150px; 
-
-    background-image: url('../../assets/images/MM_ikona-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    .foto__ikona {
+        z-index: 2;
+    }
+    .foto__ikona, .foto__obramowanie {
+        position: absolute;
+        top: -16px; 
+    }
 }
 
 // MMdE__text
@@ -71,20 +121,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    letter-spacing: 0.02rem;   
 
-    margin-bottom: $margin-sections; 
+    margin-top: 3vh; 
+    // margin-bottom: $margin-sections; 
 
-    span,  button  {
-        color: $text-color-white; 
+    span,  .text__button  {
+        // 
+        color: $text-color-white;
+        background-color: $text-color-blue;
+
         padding: 5px 5px;
         margin: 2px 0; 
 
-        border: 1px solid $text-color-blue;
+        border: 2px solid $text-color-blue;
         border-radius: 5px; 
-        background-color: $text-color-blue;
+        
     }
-    button {
-        font-size: 1.6rem; 
+    .text__arrows {
+        color: $text-color-blue;
+        font-size: 1.5rem; 
+        display: flex;
+        flex-direction: column; 
+
+        margin-top: $margin-sections /2;  
+        .fa:nth-of-type(2) {
+            transform: translateY(-10px)
+        }
+    }
+    .text__button {
+        color: $text-color-blue;
+        background-color: $background-color1;
+        text-transform: uppercase;
+        font-weight: 800; 
+        font-size: 1rem; 
         padding: 10px 25px;
     }
 }
