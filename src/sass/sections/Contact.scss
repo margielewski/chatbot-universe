@@ -1,0 +1,90 @@
+.Contact__bgc-resizer {
+    position: relative; 
+}
+
+.Contact__bgc {
+    position: absolute; 
+    width: 100%; 
+    top:0;
+    left:0;
+
+
+    background-image: url('../../assets/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.Contact {
+    // 
+    height: 38vh;
+    // min-height: 50vh;
+    margin-top: $margin-sections;
+    
+    // background-image: url('../../assets/images/bg.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    
+    color: $text-color-white;  
+
+    .Contact__admin_details, .Contact__user_info {
+        // 
+        height: 38vh;
+
+        display: flex;
+        flex-direction: column; 
+        // justify-content: center;
+           
+
+        .admin_details__phone, .admin_details__mail {
+            display: block; 
+        }
+    }
+    .Contact__admin_details {
+        font-size:1.4rem; 
+        // justify-content: center;
+        padding-left: 30px; 
+        letter-spacing: 0.02rem; 
+        .admin_details__phone {
+            margin-top: 100px; 
+        }
+        .admin_details__mail {
+            // margin-top: 1px;
+        }
+    }
+    .Contact__user_info {
+        // justify-content: center;
+        align-items: flex-end;
+        padding-right: 30px; 
+
+        .user_info__text1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 5vh 0 2vh 0;
+        }
+        .user_info__text2 {
+            margin-bottom: 2vh;   
+        }
+        .user_info__message {
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            // margin-bottom: $margin-sections; 
+        }
+        .user_info__button {
+            color: $text-color-white;
+            font-size: 1rem; 
+            border: 1px solid $text-color-white;
+            border-radius: 5px; 
+            background-color: transparent; 
+            margin-top: $margin-sections / 2;
+
+            font-family: 'Muli', 'Arial', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase; 
+            padding: 6px 30px;
+        }
+
+    }
+}

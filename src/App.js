@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 // import ReactDOM from 'react-dom';
 
+// podpięcie font-awesome
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 import './main.scss';
 
 // Router
@@ -17,6 +20,8 @@ import {
 import Navigation from './components/Navigation';
 import Choice from "./components/Choice";
 import MMdE from "./components/MMdE";
+import Chatbot from "./components/Chatbot";
+import Contact from "./components/Contact";
 
 
 class App extends Component {
@@ -41,6 +46,8 @@ class Home extends Component {
         <Navigation />
         <Choice />
         <MMdE />
+        <Chatbot />
+        <Contact />
       </>
     )
   }

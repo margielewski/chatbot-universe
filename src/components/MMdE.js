@@ -23,19 +23,28 @@ class MMdE extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='Scheme-first'>
-                                                <Circle description="zwiększenie sprzedaży/ konwersji sklepu" img="../../assets/images/MM_ikona-1.png" />
+                                                <CircleTextUp description="zwiększenie sprzedaży/ konwersji sklepu" src="images/MM_ikona-1.png" />
+                                                <div className='Scheme-first__arrows'>
+                                                    <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className='row'>
                                         <div className='col-6'>
                                             <div className='Scheme-second'>
-                                                <Circle description="pozyskiwanie subskrybentów" img="../../assets/images/MM_ikona-2.png" />
+                                                <CircleTextDown description="pozyskiwanie subskrybentów" src="images/MM_ikona-2.png" />
+                                                <div className='Scheme-first__arrows'>
+                                                    <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className='col-6'>
                                             <div className='Scheme-third'>
-                                                <Circle description="wysyłanie wiadomości do subskrybentów" img="../../assets/images/MM_ikona-3.png" />
+                                                <CircleTextDown description="wysyłanie wiadomości do subskrybentów" src="images/MM_ikona-3.png" />
+                                                <div className='Scheme-first__arrows'>
+                                                    <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +56,11 @@ class MMdE extends Component {
                                             <span><strong>docierasz do klientów </strong> w miejscu, w którym umawiają się na spotkania</span>
                                             <span>segmentujesz klientów <strong> badając ich reakcję </strong> </span>
                                             <span><strong>personalizujesz wiadomość</strong> swoich odbiorców</span>
-                                            <button>Zobacz więcej</button>
+                                            <div className='text__arrows'>
+                                                <i className="fa fa-chevron-down"></i>
+                                                <i className="fa fa-chevron-down"></i>
+                                            </div>
+                                            <button className='text__button'>Zobacz więcej</button>
                                         </div>
 
                                     </div>
@@ -70,7 +83,7 @@ class MMdE extends Component {
 //     }
 // ]
 
-class Circle extends Component {
+class CircleTextUp extends Component {
     render() {
 
         return (
@@ -80,8 +93,30 @@ class Circle extends Component {
                         <div className='Scheme'>
                             <span className='Scheme__description'>{this.props.description}</span>
                             <div className='Scheme__foto'>
-                                {/* <img className='foto-size' alt="obrazek1" src="../../assets/images/MM_ikona-1.png" /> */}
+                                <img className='foto__ikona' alt='MM_ikona' src={this.props.src} />
+                                <img className='foto__obramowanie' alt='MM_ikona' src="images/MM_obramowanie.png" />
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+}
+
+class CircleTextDown extends Component {
+    render() {
+
+        return (
+            <>
+                <div className='row'>
+                    <div className='col-12'>
+                        <div className='Scheme'>
+                            <div className='Scheme__foto'>
+                                <img className='foto__ikona' alt='MM_ikona' src={this.props.src} />
+                                <img className='foto__obramowanie' alt='MM_ikona' src="images/MM_obramowanie.png" />
+                            </div>
+                            <span className='Scheme__description'>{this.props.description}</span>
                         </div>
                     </div>
                 </div>
