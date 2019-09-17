@@ -1,6 +1,6 @@
 .Chatbot {
-    height: 75vh;
-    margin-top: 16vh; 
+    height: 469px;
+    margin-top: $margin-sections * 2.5;  
     margin-bottom: $margin-sections;
     
 }
@@ -99,8 +99,7 @@
     align-items: center;
     letter-spacing: 0.02rem; 
 
-    margin-top: 1vh; 
-    // margin-top: $margin-sections * 3; 
+    margin-top: 6.5px; 
     margin-bottom: $margin-sections; 
 
     span,  button  {
