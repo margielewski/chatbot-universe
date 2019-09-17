@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import logoIkonka from '../assets/images/logo-ikonka.png'
 
 class Navigation extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { content: [] };
+    }
+
     render() {
 
         return (
@@ -14,7 +19,7 @@ class Navigation extends Component {
                                     <div className='logo__image'>
                                         <img className='image-size' alt="Logo" src={logoIkonka} />
                                     </div>
-                                    <span className='logo__text'>Chatbot Universe</span>
+                                    <span className='logo__text'></span>
                                 </div>
                             </div>
                             <div className='col-7 navigation__nav'>
