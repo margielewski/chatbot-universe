@@ -6,14 +6,15 @@
 
     background-color: $background-color1; 
 
-    line-height: 10vh; 
+    line-height: 62px; 
     font-weight: bolder;
     font-size: 1rem;
     // display: flex;
     // align-items: center; 
+    overflow: hidden;
 
     .row {
-        height: 10vh;
+        height: 62px;
         .navigation__logo {
             display: flex;
             justify-content: flex-start; 
@@ -23,7 +24,7 @@
                 height: 100%;
             }
             .logo__text {
-                line-height: 10vh; 
+                line-height: 62px; 
             }
 
         }

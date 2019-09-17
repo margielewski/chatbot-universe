@@ -1,10 +1,10 @@
 .MMdE {
-    height: 100vh;
-    min-height: 100vh;
+    height: 625px;
+    // min-height: 100vh;
     margin-top: $margin-sections; 
 }
 .MMdE__description {
-    margin-bottom: 7vh;
+    margin-bottom: 40px;
 
     .MMdE__title {
         font-size: 1.8rem;
@@ -123,7 +123,7 @@
     align-items: center;
     letter-spacing: 0.02rem;   
 
-    margin-top: 3vh; 
+    margin-top: 19px; 
     // margin-bottom: $margin-sections; 
 
     span,  .text__button  {

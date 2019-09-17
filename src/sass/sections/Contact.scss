@@ -17,8 +17,7 @@
 
 .Contact {
     // 
-    height: 38vh;
-    // min-height: 50vh;
+    height: 238px;
     margin-top: $margin-sections;
     
     // background-image: url('../../assets/images/bg.jpg');
@@ -30,7 +29,7 @@
 
     .Contact__admin_details, .Contact__user_info {
         // 
-        height: 38vh;
+        height: 238px;
 
         display: flex;
         flex-direction: column; 
@@ -61,10 +60,10 @@
         .user_info__text1 {
             font-size: 1.8rem;
             font-weight: bold;
-            margin: 5vh 0 2vh 0;
+            margin: 31.25px 0 12.5px 0;
         }
         .user_info__text2 {
-            margin-bottom: 2vh;   
+            margin-bottom: 12.5px;   
         }
         .user_info__message {
             width: 100%;
