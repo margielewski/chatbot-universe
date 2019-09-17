@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5aea1333.chunk.css",
+    "main.css": "/static/css/main.1b354246.chunk.css",
     "main.js": "/static/js/main.e72927dd.chunk.js",
     "main.js.map": "/static/js/main.e72927dd.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.d4554acb.js",
@@ -8,9 +8,9 @@
     "static/js/2.907bb5ac.chunk.js": "/static/js/2.907bb5ac.chunk.js",
     "static/js/2.907bb5ac.chunk.js.map": "/static/js/2.907bb5ac.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5dfc3f7414acc7904fa927906eeb9081.js": "/precache-manifest.5dfc3f7414acc7904fa927906eeb9081.js",
+    "precache-manifest.b44e7f0c00706467805a2253fb6d8f06.js": "/precache-manifest.b44e7f0c00706467805a2253fb6d8f06.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5aea1333.chunk.css.map": "/static/css/main.5aea1333.chunk.css.map",
+    "static/css/main.1b354246.chunk.css.map": "/static/css/main.1b354246.chunk.css.map",
     "static/media/main.scss": "/static/media/bg2.163c0f9f.jpg",
     "static/media/iPhone-6S-Space-Gray-copy.png": "/static/media/iPhone-6S-Space-Gray-copy.ac46ab31.png"
   }
