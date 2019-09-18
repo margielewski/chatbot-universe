@@ -37,16 +37,11 @@ class Navigation extends Component {
                                         <div className='logo__image'>
                                             <img className='image-size' alt="Logo" src={logoIkonka} />
                                         </div>
-                                        <span className='logo__text'></span>
+                                        <span className='logo__text'>chatbot universe</span>
                                     </div>
                                 </div>
                                 <div className='col-7 navigation__nav'>
                                     <ul className='nav-list'>
-
-
-
-
-
                                         <li className='nav__item'>{arr[0]}</li>
                                         <li className='nav__item'>{arr[1]}</li>
                                         <li className='nav__item'>{arr[2]}</li>
