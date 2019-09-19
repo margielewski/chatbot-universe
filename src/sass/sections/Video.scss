@@ -1,0 +1,15 @@
+.videoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $text-color-violet;
+        padding: 3% 0 5% 0;
+
+    }
+}

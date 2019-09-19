@@ -17,7 +17,7 @@ class MMdE extends Component {
                 content: repos
             });
 
-        });
+        }).catch(error => console.error('Error:', error));
 
     }
     render() {

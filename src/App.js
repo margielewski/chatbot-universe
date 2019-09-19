@@ -23,7 +23,7 @@ import MMdE from "./components/MMdE";
 import MMdE_Slider from "./components/MMdE_Slider";
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
-
+import Video from './components/Video';
 
 class App extends Component {
 
@@ -50,7 +50,9 @@ class Home extends Component {
         <MMdE />
         <MMdE_Slider />
         <Chatbot />
+        <Video />
         <Contact />
+
       </>
     )
   }
