@@ -12,7 +12,7 @@ class Choice extends Component {
                     <div className='container'>
                         <div className='row'>
                             <div className='col-12'>
-                                <section className='Choice'>
+                                <section className='Choice' id='Choice'>
                                     <div className='Mobile'>
                                         <div className='Mobile__chat'>
                                             <img className='chat__custom-chat' alt='ikonka rakieta niebieska' src="images/custom-chat.png" />

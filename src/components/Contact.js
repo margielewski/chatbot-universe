@@ -12,7 +12,7 @@ class Contact extends Component {
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12'>
-                                    <section className='Contact'>
+                                    <section className='Contact' id='Contact' >
                                         <div className='row'>
                                             <div className='col-6'>
                                                 <div className='Contact__admin_details'>

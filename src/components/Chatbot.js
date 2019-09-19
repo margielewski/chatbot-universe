@@ -10,7 +10,7 @@ class Chatbot extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
-                            <section className='Chatbot'>
+                            <section className='Chatbot' id='Chatbot'>
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='Chatbot__description'>
