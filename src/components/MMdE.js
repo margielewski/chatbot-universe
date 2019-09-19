@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 class MMdE extends Component {
     state = {
@@ -46,7 +48,7 @@ class MMdE extends Component {
                                                 <div className='Scheme-first'>
                                                     <CircleTextUp description="zwiększenie sprzedaży/ konwersji sklepu" src="images/MM_ikona-1.png" />
                                                     <div className='Scheme-first__arrows'>
-                                                        <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -56,7 +58,7 @@ class MMdE extends Component {
                                                 <div className='Scheme-second'>
                                                     <CircleTextDown description="pozyskiwanie subskrybentów" src="images/MM_ikona-2.png" />
                                                     <div className='Scheme-first__arrows'>
-                                                        <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                        <FontAwesomeIcon icon={faChevronRight} /><FontAwesomeIcon icon={faChevronRight} />
                                                     </div>
                                                 </div>
                                             </div>
@@ -64,7 +66,7 @@ class MMdE extends Component {
                                                 <div className='Scheme-third'>
                                                     <CircleTextDown description="wysyłanie wiadomości do subskrybentów" src="images/MM_ikona-3.png" />
                                                     <div className='Scheme-first__arrows'>
-                                                        <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                        <FontAwesomeIcon icon={faChevronRight} /><FontAwesomeIcon icon={faChevronRight} />
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,8 +80,8 @@ class MMdE extends Component {
                                                 <span>{arr[4]} <strong> {arr[5]} </strong> </span>
                                                 <span><strong>{arr[6]}</strong> {arr[7]}</span>
                                                 <div className='text__arrows'>
-                                                    <i className="fa fa-chevron-down"></i>
-                                                    <i className="fa fa-chevron-down"></i>
+                                                    <FontAwesomeIcon icon={faChevronDown} />
+                                                    <FontAwesomeIcon icon={faChevronDown} />
                                                 </div>
                                                 <button className='text__button'>Zobacz więcej</button>
                                             </div>
