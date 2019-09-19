@@ -3,9 +3,33 @@ import React, { Component } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 
 class Chatbot extends Component {
-    render() {
+    state = {
+        content: null,
+    }
+    componentDidMount() {
+        let url = 'http://chatbotest.xyz:1337/Chatbots';
+        fetch(url).
+            then(response => response.json()).then((repos) => {
 
-        return (
+
+        
+
+                this.setState({
+                    content: repos
+                });
+
+            });
+
+    }
+    render() {
+        if (this.state.content == null) {
+            return null;
+        } else {
+            const { content } = this.state;
+            const arr = content.map(i => i.title);
+            console.log(arr)
+          
+          return (
             <>
                 <div className='container'>
                     <div className='row'>
@@ -20,43 +44,45 @@ class Chatbot extends Component {
                                     </div>
                                 </div>
                                 <div className='Chatbot__scheme'>
+           
+                                        <div className='row'>
+                                            <div className='col-6'>
+                                                <div className='Scheme-second'>
+                                                    <CircleTextDown description="automatyzacja procesów" src="images/boty_ikona-2.png" />
+                                                </div>
+                                            </div>
+                                            <div className='col-6'>
+                                                <div className='Scheme-third'>
+                                                    <CircleTextDown description="uatrakcyjnienie marki" src="images/boty_ikona-1.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div className='row'>
-                                        <div className='col-6'>
-                                            <div className='Scheme-second'>
-                                                <CircleTextDown description="automatyzacja procesów" src="images/boty_ikona-2.png" />
+                                        <div className='col-12'>
+                                            <div className='Chatbot__text'>
+                                                <span>{arr[2]}<strong> 24/7</strong></span>
+                                                <span>{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
+                                                <span><strong>{arr[6]}</strong> {arr[7]}</span>
+                                                <div className='text__arrows'>
+                                                    <i className="fa fa-chevron-down"></i>
+                                                    <i className="fa fa-chevron-down"></i>
+                                                </div>
+                                                <button className='text__button'>Zobacz więcej</button>
                                             </div>
-                                        </div>
-                                        <div className='col-6'>
-                                            <div className='Scheme-third'>
-                                                <CircleTextDown description="uatrakcyjnienie marki" src="images/boty_ikona-1.png" />
-                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className='row'>
-                                    <div className='col-12'>
-                                        <div className='Chatbot__text'>
-                                            <span>pozostajesz w kontakcie z klientem<strong> 24/7</strong></span>
-                                            <span>wprowadzasz <strong> interaktywną formę komunikacji </strong> (konkursy, wyzwania, ankiety) </span>
-                                            <span><strong>personalizujesz</strong> relację z klientem</span>
-                                            <div className='text__arrows'>
-                                                <i className="fa fa-chevron-down"></i>
-                                                <i className="fa fa-chevron-down"></i>
-                                            </div>
-                                            <button className='text__button'>Zobacz więcej</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </section>
+                                </section>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </>
-        )
+                </>
+            )
+        }
     }
 }
 

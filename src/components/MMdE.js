@@ -3,76 +3,99 @@ import React, { Component } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 
 class MMdE extends Component {
-    render() {
+    state = {
+        content: null,
+    }
+    componentDidMount() {
+        let url = 'http://chatbotest.xyz:1337/Mmdes';
+        fetch(url).
+            then(response => response.json()).then((repos) => {
 
-        return (
-            <>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-12'>
-                            <section className='MMdE' id='MMdE'>
-                                <div className='row'>
-                                    <div className='col-12'>
-                                        <div className='MMdE__description'>
-                                            <h1 className='MMdE__title'>Messenger Marketing dla Ecomers</h1>
-                                            <h2 className='MMdE__subtitle'>Korzyści_jak działa?</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='MMdE__scheme'>
+
+                this.setState({
+                    content: repos
+                });
+
+            });
+
+    }
+    render() {
+        if (this.state.content == null) {
+            return null;
+        } else {
+            const { content } = this.state;
+            const arr = content.map(i => i.title);
+            console.log(arr)
+            return (
+                <>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-12'>
+                                <section className='MMdE'>
+
                                     <div className='row'>
                                         <div className='col-12'>
-                                            <div className='Scheme-first'>
-                                                <CircleTextUp description="zwiększenie sprzedaży/ konwersji sklepu" src="images/MM_ikona-1.png" />
-                                                <div className='Scheme-first__arrows'>
-                                                    <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                            <div className='MMdE__description'>
+                                                <h1 className='MMdE__title'>{arr[0]}</h1>
+                                                <h2 className='MMdE__subtitle'>{arr[1]}</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='MMdE__scheme'>
+                                        <div className='row'>
+                                            <div className='col-12'>
+                                                <div className='Scheme-first'>
+                                                    <CircleTextUp description="zwiększenie sprzedaży/ konwersji sklepu" src="images/MM_ikona-1.png" />
+                                                    <div className='Scheme-first__arrows'>
+                                                        <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='row'>
+                                            <div className='col-6'>
+                                                <div className='Scheme-second'>
+                                                    <CircleTextDown description="pozyskiwanie subskrybentów" src="images/MM_ikona-2.png" />
+                                                    <div className='Scheme-first__arrows'>
+                                                        <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='col-6'>
+                                                <div className='Scheme-third'>
+                                                    <CircleTextDown description="wysyłanie wiadomości do subskrybentów" src="images/MM_ikona-3.png" />
+                                                    <div className='Scheme-first__arrows'>
+                                                        <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className='row'>
-                                        <div className='col-6'>
-                                            <div className='Scheme-second'>
-                                                <CircleTextDown description="pozyskiwanie subskrybentów" src="images/MM_ikona-2.png" />
-                                                <div className='Scheme-first__arrows'>
-                                                    <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
+                                        <div className='col-12'>
+                                            <div className='MMdE__text'>
+                                                <span><strong>{arr[2]}</strong> {arr[3]}</span>
+                                                <span>{arr[4]} <strong> {arr[5]} </strong> </span>
+                                                <span><strong>{arr[6]}</strong> {arr[7]}</span>
+                                                <div className='text__arrows'>
+                                                    <i className="fa fa-chevron-down"></i>
+                                                    <i className="fa fa-chevron-down"></i>
                                                 </div>
+                                                <button className='text__button'>Zobacz więcej</button>
                                             </div>
-                                        </div>
-                                        <div className='col-6'>
-                                            <div className='Scheme-third'>
-                                                <CircleTextDown description="wysyłanie wiadomości do subskrybentów" src="images/MM_ikona-3.png" />
-                                                <div className='Scheme-first__arrows'>
-                                                    <i className="fa fa-chevron-right"></i><i className="fa fa-chevron-right"></i>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className='row'>
-                                    <div className='col-12'>
-                                        <div className='MMdE__text'>
-                                            <span><strong>docierasz do klientów </strong> w miejscu, w którym umawiają się na spotkania</span>
-                                            <span>segmentujesz klientów <strong> badając ich reakcję </strong> </span>
-                                            <span><strong>personalizujesz wiadomość</strong> swoich odbiorców</span>
-                                            <div className='text__arrows'>
-                                                <i className="fa fa-chevron-down"></i>
-                                                <i className="fa fa-chevron-down"></i>
-                                            </div>
-                                            <button className='text__button'>Zobacz więcej</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </section>
+                                </section>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </>
-        )
+                </>
+            )
+        }
     }
 }
 
