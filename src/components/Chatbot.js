@@ -11,6 +11,9 @@ class Chatbot extends Component {
         fetch(url).
             then(response => response.json()).then((repos) => {
 
+
+        
+
                 this.setState({
                     content: repos
                 });
@@ -25,21 +28,23 @@ class Chatbot extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
             console.log(arr)
-            return (
-                <>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-12'>
-                                <section className='Chatbot'>
-                                    <div className='row'>
-                                        <div className='col-12'>
-                                            <div className='Chatbot__description'>
-                                                <h1 className='Chatbot__title'>{arr[0]}</h1>
-                                                <h2 className='Chatbot__subtitle'>{arr[1]}</h2>
-                                            </div>
+          
+          return (
+            <>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-12'>
+                            <section className='Chatbot' id='Chatbot'>
+                                <div className='row'>
+                                    <div className='col-12'>
+                                        <div className='Chatbot__description'>
+                                            <h1 className='Chatbot__title'>Chatbot</h1>
+                                            <h2 className='Chatbot__subtitle'>Wirtualny asystent dla twojej firmy</h2>
                                         </div>
                                     </div>
-                                    <div className='Chatbot__scheme'>
+                                </div>
+                                <div className='Chatbot__scheme'>
+           
                                         <div className='row'>
                                             <div className='col-6'>
                                                 <div className='Scheme-second'>

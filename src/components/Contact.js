@@ -17,6 +17,7 @@ class Contact extends Component {
 
             });
 
+
     }
     render() {
         if (this.state.content == null) {
@@ -39,6 +40,7 @@ class Contact extends Component {
                                                         <span className='admin_details__phone'>+48 666 108 701</span>
                                                         <span className='admin_details__mail'>contact@chatbot-universe.com</span>
                                                     </div>
+
                                                 </div>
                                                 <div className='col-6'>
                                                     <div className='Contact__user_info'>
