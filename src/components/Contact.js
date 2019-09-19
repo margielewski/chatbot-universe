@@ -8,14 +8,13 @@ class Contact extends Component {
     }
     componentDidMount() {
         let url = 'http://chatbotest.xyz:1337/Chatbots';
-        fetch(url).
-            then(response => response.json()).then((repos) => {
+        fetch(url).then(response => response.json()).then((repos) => {
 
-                this.setState({
-                    content: repos
-                });
-
+            this.setState({
+                content: repos
             });
+
+        });
 
 
     }
