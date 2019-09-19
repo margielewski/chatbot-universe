@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -61,8 +63,8 @@ class Chatbot extends Component {
                                                 <span>{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
                                                 <span><strong>{arr[6]}</strong> {arr[7]}</span>
                                                 <div className='text__arrows'>
-                                                    <i className="fa fa-chevron-down"></i>
-                                                    <i className="fa fa-chevron-down"></i>
+                                                    <FontAwesomeIcon icon={faChevronDown} />
+                                                    <FontAwesomeIcon icon={faChevronDown} />
                                                 </div>
                                                 <button className='text__button'>Zobacz więcej</button>
                                             </div>
