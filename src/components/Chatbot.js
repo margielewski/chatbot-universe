@@ -8,17 +8,12 @@ class Chatbot extends Component {
     }
     componentDidMount() {
         let url = 'http://chatbotest.xyz:1337/Chatbots';
-        fetch(url).
-            then(response => response.json()).then((repos) => {
-
-
-        
-
-                this.setState({
-                    content: repos
-                });
-
+        fetch(url).then(response => response.json()).then((repos) => {
+            this.setState({
+                content: repos
             });
+
+        });
 
     }
     render() {
@@ -28,23 +23,23 @@ class Chatbot extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
             console.log(arr)
-          
-          return (
-            <>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-12'>
-                            <section className='Chatbot' id='Chatbot'>
-                                <div className='row'>
-                                    <div className='col-12'>
-                                        <div className='Chatbot__description'>
-                                            <h1 className='Chatbot__title'>Chatbot</h1>
-                                            <h2 className='Chatbot__subtitle'>Wirtualny asystent dla twojej firmy</h2>
+
+            return (
+                <>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-12'>
+                                <section className='Chatbot' id='Chatbot'>
+                                    <div className='row'>
+                                        <div className='col-12'>
+                                            <div className='Chatbot__description'>
+                                                <h1 className='Chatbot__title'>Chatbot</h1>
+                                                <h2 className='Chatbot__subtitle'>Wirtualny asystent dla twojej firmy</h2>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='Chatbot__scheme'>
-           
+                                    <div className='Chatbot__scheme'>
+
                                         <div className='row'>
                                             <div className='col-6'>
                                                 <div className='Scheme-second'>
