@@ -20,6 +20,7 @@ import {
 import Navigation from './components/Navigation';
 import Choice from "./components/Choice";
 import MMdE from "./components/MMdE";
+import MMdE_Slider from "./components/MMdE_Slider";
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 
@@ -47,6 +48,7 @@ class Home extends Component {
         <Navigation />
         <Choice />
         <MMdE />
+        <MMdE_Slider />
         <Chatbot />
         <Contact />
       </>

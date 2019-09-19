@@ -1,0 +1,33 @@
+.MMdE_Slider {
+    // height: 400px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+    margin-top: $margin-sections;
+}
+.MMdE_Slider__description {
+    // margin-bottom: 40px;
+
+    .MMdE_Slider__title {
+        font-size: 1.8rem;
+        // font-size: 22px; 
+
+        font-weight: bold; 
+        color: $text-color-blue; 
+        padding-bottom: 6px; 
+    }
+    .MMdE_Slider__subtitle {
+        font-size: 1.6rem; 
+        // margin-bottom: 60px; 
+    }
+
+    .MMdE_Slider__title, .MMdE_Slider__subtitle {
+        text-align: center; 
+    }
+}
+.container_Slider {
+    width: 300px;
+}
