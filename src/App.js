@@ -19,11 +19,16 @@ import {
 
 import Navigation from './components/Navigation';
 import Choice from "./components/Choice";
+
 import MMdE from "./components/MMdE";
 import MMdE_Slider from "./components/MMdE_Slider";
+import MMdE_Chart from "./components/MMdE_Chart";
+import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
+
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Video from './components/Video';
+
 
 class App extends Component {
 
@@ -49,6 +54,8 @@ class Home extends Component {
         <Choice />
         <MMdE />
         <MMdE_Slider />
+        {/* <MMdE_Chart /> */}
+        <MMdE_SubpageThree />
         <Chatbot />
         <Video />
         <Contact />
