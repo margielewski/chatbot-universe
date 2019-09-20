@@ -15,11 +15,9 @@ class Chatbot_SubpageOne extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='Chatbot_SubpageOne__description'>
-                                            <h1 className='Chatbot_SubpageOne__title'>Interakcja z użytkownikiem poprzez quizy spersonalizowane oferty</h1>
-                                            {/* <h2 className='MMdE_SubpageThree__subtitle'>sOnerzeniu zestawu proponowanych pytań z odpowiedzią na każde z nich</h2> */}
+                                            <h1 className='Chatbot_SubpageOne__title'>Chatbot wyzwalany komentarzami pod postem</h1>
                                             <div className='Chatbot_SubpageOne__text'>
-                                                <span><strong>quiz lub test preferencjipomagający wybrać produkt</strong></span>
-                                                <span><strong>przedstawienie oferty w wybrany sposób</strong></span>
+                                                <span>Interakcja z użytkownikiem <strong>_24/7</strong></span>
                                             </div>
                                         </div>
                                     </div>
