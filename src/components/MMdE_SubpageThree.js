@@ -27,9 +27,9 @@ class MMdE_SubpageThree extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className="MMdE_SubpageThree_graphics">
-                                            <img className='graphics' alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_6.png" />
-                                            <img className='graphics' alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_6.png" />
-                                            <img className='graphics' alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_6.png" />
+                                            <img className='graphics' alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_9.png" />
+                                            <img className='graphics' alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_7.png" />
+                                            <img className='graphics' alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_8.png" />
                                         </div>
                                     </div>
                                 </div>

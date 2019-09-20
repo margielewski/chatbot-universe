@@ -26,8 +26,8 @@ class Chatbot_SubpageTwo extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className="Chatbot_SubpageTwo_graphics">
-                                            <img className='graphics' alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_5.png" />
-                                            <img className='graphics' alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_5.png" />
+                                            <img className='graphics' alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_13.png" />
+                                            <img className='graphics' alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_12.png" />
                                         </div>
                                     </div>
                                 </div>
