@@ -24,6 +24,8 @@ import MMdE from "./components/MMdE";
 import MMdE_Slider from "./components/MMdE_Slider";
 import MMdE_Chart from "./components/MMdE_Chart";
 import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
+import Chatbot_SubpageOne from "./components/Chatbot_SubpageOne";
+import Chatbot_SubpageTwo from "./components/Chatbot_SubpageTwo";
 
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
@@ -57,6 +59,8 @@ class Home extends Component {
         {/* <MMdE_Chart /> */}
         <MMdE_SubpageThree />
         <Chatbot />
+        <Chatbot_SubpageOne />
+        <Chatbot_SubpageTwo />
         <Video />
         <Contact />
 

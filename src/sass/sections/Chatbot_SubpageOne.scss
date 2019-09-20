@@ -1,0 +1,72 @@
+.Chatbot_SubpageOne {
+    // height: 400px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: $margin-sections;
+}
+
+.Chatbot_SubpageOne__description {
+    // margin-bottom: 40px;
+
+    .Chatbot_SubpageOne__title {
+        font-size: 1.8rem;
+        // font-size: 22px; 
+
+        font-weight: bold;
+        color: $text-color-violet;
+        padding-bottom: 6px;
+    }
+
+    .Chatbot_SubpageOne__subtitle {
+        font-size: 1.6rem;
+        // margin-bottom: 60px; 
+    }
+
+    .Chatbot_SubpageOne__title,
+    .Chatbot_SubpageOne__subtitle {
+        text-align: center;
+    }
+}
+
+.container_Chatbot_SubpageOne {
+    width: 300px;
+}
+
+.Chatbot_SubpageOne__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.02rem;
+
+    margin-top: 19px;
+    // margin-bottom: $margin-sections; 
+
+    span {
+        // 
+        color: $text-color-white;
+        background-color: $text-color-violet;
+
+        padding: 5px 5px;
+        margin: 2px 0;
+
+        border: 2px solid $text-color-violet;
+        border-radius: 5px;
+
+    }
+}
+
+.Chatbot_SubpageOne_graphics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // border: 2px solid red; 
+
+    .graphics {
+        width: 25%;
+    }
+}
