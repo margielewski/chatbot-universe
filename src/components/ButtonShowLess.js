@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ButtonShowMore extends Component {
+class ButtonShowLess extends Component {
 
     render() {
         // console.log(this.props.display)
@@ -9,11 +9,11 @@ class ButtonShowMore extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
-                            <section className='ButtonShowMore'>
+                            <section className='ButtonShowLess'>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <div className='ButtonShowMore__text'>
-                                            <button className='text__button' onClick={this.props.userSelected.bind(null, true)}>Zobacz więcej</button>
+                                        <div className='ButtonShowLess__text'>
+                                            <button className='text__button' onClick={this.props.userSelected.bind(null, false)}>Zobacz mniej</button>
 
                                         </div>
 
@@ -29,4 +29,4 @@ class ButtonShowMore extends Component {
     }
 }
 
-export default ButtonShowMore;  
+export default ButtonShowLess;  

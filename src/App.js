@@ -27,6 +27,8 @@ import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
 import Chatbot_SubpageOne from "./components/Chatbot_SubpageOne";
 import Chatbot_SubpageTwo from "./components/Chatbot_SubpageTwo";
 import ButtonShowMore from './components/ButtonShowMore';
+import ButtonShowLess from './components/ButtonShowLess';
+
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Video from './components/Video';
@@ -64,8 +66,8 @@ class Home extends Component {
         <Navigation />
         <Choice />
         <MMdE />
-        <ButtonShowMore userSelected={this.onUserSelected} />
-        {this.state.selectedUser ? <><MMdE_Slider /> <MMdE_SubpageThree /></> : null}
+        {this.state.selectedUser ? null : <ButtonShowMore userSelected={this.onUserSelected} />}
+        {this.state.selectedUser ? <><MMdE_Slider /> <MMdE_SubpageThree /><ButtonShowLess userSelected={this.onUserSelected} /></> : null}
         {/* <MMdE_Chart /> */}
         <Chatbot />
         <Chatbot_SubpageOne />
