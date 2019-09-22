@@ -26,6 +26,8 @@ import MMdE_Chart from "./components/MMdE_Chart";
 import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
 import Chatbot_SubpageOne from "./components/Chatbot_SubpageOne";
 import Chatbot_SubpageTwo from "./components/Chatbot_SubpageTwo";
+import ButtonShowMore from './components/ButtonShowMore';
+import ButtonShowLess from './components/ButtonShowLess';
 
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
@@ -48,21 +50,31 @@ class App extends Component {
 }
 
 class Home extends Component {
+  state = {
+    selectedUser: false // tutaj
+  };
+  onUserSelected = (selectedUser) => {
+    this.setState({
+      selectedUser
+    });
 
+  }
   render() {
+
     return (
       <>
         <Navigation />
         <Choice />
         <MMdE />
-        <MMdE_Slider />
+        {this.state.selectedUser ? null : <ButtonShowMore userSelected={this.onUserSelected} />}
+        {this.state.selectedUser ? <><MMdE_Slider /> <MMdE_SubpageThree /><ButtonShowLess userSelected={this.onUserSelected} /></> : null}
         {/* <MMdE_Chart /> */}
-        <MMdE_SubpageThree />
         <Chatbot />
         <Chatbot_SubpageOne />
         <Chatbot_SubpageTwo />
         <Video />
         <Contact />
+
 
       </>
     )

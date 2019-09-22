@@ -8,6 +8,7 @@ class MMdE extends Component {
     state = {
         content: null,
     }
+
     componentDidMount() {
         let url = 'http://chatbotest.xyz:1337/Mmdes';
         fetch(url).then(response => response.json()).then((repos) => {
@@ -18,6 +19,7 @@ class MMdE extends Component {
             });
 
         }).catch(error => console.error('Error:', error));
+
 
     }
     render() {
@@ -83,7 +85,6 @@ class MMdE extends Component {
                                                     <FontAwesomeIcon icon={faChevronDown} />
                                                     <FontAwesomeIcon icon={faChevronDown} />
                                                 </div>
-                                                <button className='text__button'>Zobacz więcej</button>
                                             </div>
 
                                         </div>
