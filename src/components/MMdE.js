@@ -3,10 +3,24 @@ import React, { Component } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Content from './Content'
 
 class MMdE extends Component {
     state = {
         content: null,
+        display: 'block'
+    }
+    handleClick = () => {
+        if (this.state.display === 'block') {
+            this.setState({
+                display: 'none'
+            })
+        } else {
+            this.setState({
+                display: 'block'
+            })
+        }
+        console.log('123')
     }
     componentDidMount() {
         let url = 'http://chatbotest.xyz:1337/Mmdes';
@@ -83,7 +97,8 @@ class MMdE extends Component {
                                                     <FontAwesomeIcon icon={faChevronDown} />
                                                     <FontAwesomeIcon icon={faChevronDown} />
                                                 </div>
-                                                <button className='text__button'>Zobacz więcej</button>
+                                                <Content display={this.state.display}></Content>
+                                                <button className='text__button' onClick={this.handleClick}>Zobacz więcej</button>
                                             </div>
 
                                         </div>

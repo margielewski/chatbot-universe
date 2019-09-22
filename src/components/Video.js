@@ -7,7 +7,7 @@ class Video extends Component {
             <>
                 <div className='container videoContainer'>
                     <h2>Filmik _demonstracyjny</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qLRlVhb0Jyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qLRlVhb0Jyo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </>
         )

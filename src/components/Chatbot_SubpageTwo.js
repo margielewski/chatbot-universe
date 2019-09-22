@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-
 // import img1 from "./../assets/images/slider/telefon_1.png"
 // import img2 from "./../assets/images/slider/telefon_2.png"
 
 
 class Chatbot_SubpageTwo extends Component {
+
     render() {
         return (
             <>
+
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
