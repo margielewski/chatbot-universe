@@ -105,7 +105,7 @@ class Home extends Component {
 
   }
   render() {
-    console.log(this.state, 'state<---<---<---')
+    // console.log(this.state, 'state<---<---<---')
     return (
       <>
 
