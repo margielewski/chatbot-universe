@@ -23,7 +23,7 @@ class MMdE_Slider extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
-                            <section className={`MMdE_Slider ${this.props.action}`} id='MMdE_Slider' >
+                            <section className={`MMdE_Slider ${this.props.classAnimationMMdE}`} id='MMdE_Slider' >
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='MMdE_Slider__description'>

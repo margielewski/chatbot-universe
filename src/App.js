@@ -27,8 +27,10 @@ import MMdE_Chart from "./components/MMdE_Chart";
 import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
 import Chatbot_SubpageOne from "./components/Chatbot_SubpageOne";
 import Chatbot_SubpageTwo from "./components/Chatbot_SubpageTwo";
-import ButtonShowMore from './components/ButtonShowMore';
-import ButtonShowLess from './components/ButtonShowLess';
+import ButtonShowMoreM from './components/ButtonShowMoreM';
+import ButtonShowLessM from './components/ButtonShowLessM';
+import ButtonShowMoreC from './components/ButtonShowMoreC';
+import ButtonShowLessC from './components/ButtonShowLessC';
 
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
@@ -51,31 +53,59 @@ class App extends Component {
 }
 
 class Home extends Component {
+
   state = {
-    selectedUser: false,
-  };
-  onUserSelected = (selectedUser) => {
-    if (this.state.selectedUser === false) {
+    showHideComponentMMdE: false,
+    classAnimationMMdE: null,
+    selectedMMdE: false,
+    showHideComponentChatbot: false,
+    classAnimationChatbot: null,
+    selectedChatbot: false,
+  }
+  handleShowMoreClickMMdE = (selectedMoreMMdE) => {
+    this.setState({
+
+      showHideComponentMMdE: true,
+      classAnimationMMdE: 'show',
+      selectedMoreMMdE
+    });
+  }
+  handleShowLessClickMMdE = (selectedLessMMdE) => {
+    this.setState({
+      classAnimationMMdE: 'hide',
+      selectedLessMMdE
+
+    })
+    setTimeout(() => {
       this.setState({
-        selectedUser
-      });
-      console.log(this.state.selectedUser, '123')
-    } else {
-      this.setState({
-        selectedUser
-      });
-    }
-
-
-
+        showHideComponentMMdE: false,
+      })
+    }, 2000);
 
   }
+  handleShowMoreClickChatbot = (selectedMoreChatbot) => {
+    this.setState({
 
+      showHideComponentChatbot: true,
+      classAnimationChatbot: 'show',
+      selectedMoreChatbot
+    });
+  }
+  handleShowLessClickChatbot = (selectedLessChatbot) => {
+    this.setState({
+      classAnimationChatbot: 'hide',
+      selectedLessChatbot
 
+    })
+    setTimeout(() => {
+      this.setState({
+        showHideComponentChatbot: false,
+      })
+    }, 2000);
 
-
+  }
   render() {
-    console.log(this.state.selectedUser, 'state<---<---<---')
+    console.log(this.state, 'state<---<---<---')
     return (
       <>
 
@@ -83,22 +113,28 @@ class Home extends Component {
         <Choice />
         <MMdE />
 
-        {this.state.selectedUser ?
-          null : <ButtonShowMore userSelected={this.onUserSelected} />}
-        {this.state.selectedUser ?
+        {this.state.showHideComponentMMdE ? null :
+          <ButtonShowMoreM clickSelectedMMdE={this.handleShowMoreClickMMdE} />
+        }
+        {this.state.showHideComponentMMdE ?
           <>
-            <MMdE_Slider />
-            <MMdE_SubpageThree />
-            <ButtonShowLess userSelected={this.onUserSelected} />
+            <MMdE_Slider classAnimationMMdE={this.state.classAnimationMMdE} />
+            <MMdE_SubpageThree classAnimationMMdE={this.state.classAnimationMMdE} />
+            <ButtonShowLessM clickSelectedMMdE={this.handleShowLessClickMMdE} />
           </> : null}
-
-
 
 
         {/* <MMdE_Chart /> */}
         <Chatbot />
-        <Chatbot_SubpageOne />
-        <Chatbot_SubpageTwo />
+        {this.state.showHideComponentChatbot ? null :
+          <ButtonShowMoreC clickSelectedChatbot={this.handleShowMoreClickChatbot} />
+        }
+        {this.state.showHideComponentChatbot ?
+          <>
+            <Chatbot_SubpageOne classAnimationChatbot={this.state.classAnimationChatbot} />
+            <Chatbot_SubpageTwo classAnimationChatbot={this.state.classAnimationChatbot} />
+            <ButtonShowLessC clickSelectedChatbot={this.handleShowLessClickChatbot} />
+          </> : null}
         <Video />
         <Contact />
 
@@ -107,5 +143,10 @@ class Home extends Component {
     )
   }
 }
+
+
+
+
+
 
 export default App;

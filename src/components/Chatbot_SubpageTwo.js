@@ -12,7 +12,7 @@ class Chatbot_SubpageTwo extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
-                            <section className='Chatbot_SubpageTwo' id='Chatbot_SubpageTwo' >
+                            <section className={`Chatbot_SubpageTwo ${this.props.classAnimationChatbot}`} id='Chatbot_SubpageTwo' >
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='Chatbot_SubpageTwo__description'>

@@ -66,7 +66,6 @@ class Chatbot extends Component {
                                                     <FontAwesomeIcon icon={faChevronDown} />
                                                     <FontAwesomeIcon icon={faChevronDown} />
                                                 </div>
-                                                <button className='text__button'>Zobacz więcej</button>
                                             </div>
 
                                         </div>
