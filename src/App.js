@@ -51,23 +51,35 @@ class App extends Component {
 
 class Home extends Component {
   state = {
-    selectedUser: false // tutaj
+    selectedUser: false, // tutaj
+    hide: false
   };
   onUserSelected = (selectedUser) => {
-    this.setState({
-      selectedUser
-    });
+    if (this.state.selectedUser === false) {
+      this.setState({
+        selectedUser
+      });
+    } else {
+
+      setTimeout(() => {
+        this.setState({
+          selectedUser
+        });
+      }, 3000);
+    }
+
+
 
   }
   render() {
-
+    console.log(this.state.selectedUser)
     return (
       <>
         <Navigation />
         <Choice />
         <MMdE />
         {this.state.selectedUser ? null : <ButtonShowMore userSelected={this.onUserSelected} />}
-        {this.state.selectedUser ? <><MMdE_Slider /> <MMdE_SubpageThree /><ButtonShowLess userSelected={this.onUserSelected} /></> : null}
+        {this.state.selectedUser ? <><MMdE_Slider animation={this.state.hide} hide={this.state.selectedUser} /> <MMdE_SubpageThree hide={this.state.selectedUser} /><ButtonShowLess userSelected={this.onUserSelected} /></> : null}
         {/* <MMdE_Chart /> */}
         <Chatbot />
         <Chatbot_SubpageOne />
