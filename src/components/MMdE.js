@@ -23,6 +23,7 @@ class MMdE extends Component {
 
     }
     render() {
+
         if (this.state.content == null) {
             return null;
         } else {

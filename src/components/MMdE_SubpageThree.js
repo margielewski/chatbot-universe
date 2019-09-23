@@ -11,7 +11,7 @@ class MMdE_SubpageThree extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
-                            <section className='MMdE_SubpageThree' id='MMdE_SubpageThree' >
+                            <section className={`MMdE_SubpageThree ${this.props.classAnimationMMdE}`} id='MMdE_SubpageThree' >
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='MMdE_SubpageThree__description'>
