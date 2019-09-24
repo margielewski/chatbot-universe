@@ -29,7 +29,6 @@ class MMdE extends Component {
         } else {
             const { content } = this.state;
             const arr = content.map(i => i.title);
-            console.log(arr)
             return (
                 <>
                     <div className='container'>
