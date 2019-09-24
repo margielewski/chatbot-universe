@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+import { Spring } from 'react-spring/renderprops'
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,8 +41,33 @@ class MMdE extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='MMdE__description'>
-                                                <h1 className='MMdE__title'>{arr[0]}</h1>
-                                                <h2 className='MMdE__subtitle'>{arr[1]}</h2>
+                                                <Spring
+                                                    from={{ opacity: 0, marginRight: -500 }}
+                                                    to={{ opacity: 1, marginRight: 0 }}
+                                                    config={{ delay: 3000, duration: 500 }}
+                                                >
+                                                    {props => (
+                                                        <div style={props}>
+                                                            <h1 className='MMdE__title'>{arr[0]}</h1>
+                                                        </div>
+                                                    )}
+                                                </Spring>
+
+                                                <Spring
+                                                    from={{ opacity: 0, marginLeft: -500 }}
+                                                    to={{ opacity: 1, marginLeft: 0 }}
+                                                    config={{ delay: 3000, duration: 500 }}
+                                                >
+                                                    {props => (
+                                                        <div style={props}>
+
+                                                            <h2 className='MMdE__subtitle'>{arr[1]}</h2>
+
+                                                        </div>
+                                                    )}
+                                                </Spring>
+
+
                                             </div>
                                         </div>
                                     </div>

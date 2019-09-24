@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Spring } from "react-spring";
 // import ReactDOM from 'react-dom';
 
 // podpięcie font-awesome

@@ -1,0 +1,38 @@
+.MMdE_Chart {
+    // height: 400px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+    margin-top: $margin-sections;
+}
+.MMdE_Chart__description {
+    // margin-bottom: 40px;
+
+    .MMdE_Chart__title {
+        font-size: 1.8rem;
+        // font-size: 22px; 
+
+        font-weight: bold; 
+        color: $text-color-blue; 
+        padding-bottom: 6px; 
+    }
+    .MMdE_Chart__subtitle {
+        font-size: 1.6rem; 
+        // margin-bottom: 60px; 
+    }
+
+    .MMdE_Chart__title, .MMdE_Chart__subtitle {
+        text-align: center; 
+    }
+}
+
+// 
+// 2
+// 
+
+.MMdE_Chart__graphics {
+    height: 70vh; 
+}
