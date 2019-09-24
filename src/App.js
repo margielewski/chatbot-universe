@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useTransition, animated } from 'react-spring'
 
 // import ReactDOM from 'react-dom';
 
@@ -27,11 +28,7 @@ import MMdE_Chart from "./components/MMdE_Chart";
 import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
 import Chatbot_SubpageOne from "./components/Chatbot_SubpageOne";
 import Chatbot_SubpageTwo from "./components/Chatbot_SubpageTwo";
-import ButtonShowMoreM from './components/ButtonShowMoreM';
-import ButtonShowLessM from './components/ButtonShowLessM';
-import ButtonShowMoreC from './components/ButtonShowMoreC';
-import ButtonShowLessC from './components/ButtonShowLessC';
-
+import ButtonShowMoreM from './components/ButtonShowMoreM'
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Video from './components/Video';
@@ -52,101 +49,60 @@ class App extends Component {
   }
 }
 
-class Home extends Component {
 
-  state = {
-    showHideComponentMMdE: false,
-    classAnimationMMdE: null,
-    selectedMMdE: false,
-    showHideComponentChatbot: false,
-    classAnimationChatbot: null,
-    selectedChatbot: false,
-  }
-  handleShowMoreClickMMdE = (selectedMoreMMdE) => {
-    this.setState({
 
-      showHideComponentMMdE: true,
-      classAnimationMMdE: 'show',
-      selectedMoreMMdE
-    });
-  }
-  handleShowLessClickMMdE = (selectedLessMMdE) => {
-    this.setState({
-      classAnimationMMdE: 'hide',
-      selectedLessMMdE
+const Home = () => {
+  const [show, set] = React.useState(false)
+  const transitions = useTransition(show, null, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
 
+
+  })
+
+
+  const handleShowMoreClickMMdE = (selectedMoreMMdE) => {
+    set(animated => {
+      console.log(animated)
+      return !animated
     })
-    setTimeout(() => {
-      this.setState({
-        showHideComponentMMdE: false,
-      })
-    }, 2000);
-
   }
-  handleShowMoreClickChatbot = (selectedMoreChatbot) => {
-    this.setState({
-
-      showHideComponentChatbot: true,
-      classAnimationChatbot: 'show',
-      selectedMoreChatbot
-    });
-  }
-  handleShowLessClickChatbot = (selectedLessChatbot) => {
-    this.setState({
-      classAnimationChatbot: 'hide',
-      selectedLessChatbot
-
-    })
-    setTimeout(() => {
-      this.setState({
-        showHideComponentChatbot: false,
-      })
-    }, 2000);
-
-  }
-  render() {
-    // console.log(this.state, 'state<---<---<---')
-    return (
-      <>
-
-        <Navigation />
-        <Choice />
-        <MMdE />
-
-        {this.state.showHideComponentMMdE ? null :
-          <ButtonShowMoreM clickSelectedMMdE={this.handleShowMoreClickMMdE} />
-        }
-        {this.state.showHideComponentMMdE ?
-          <>
-            <MMdE_Slider classAnimationMMdE={this.state.classAnimationMMdE} />
-            <MMdE_SubpageThree classAnimationMMdE={this.state.classAnimationMMdE} />
-            <ButtonShowLessM clickSelectedMMdE={this.handleShowLessClickMMdE} />
-          </> : null}
 
 
-        {/* <MMdE_Chart /> */}
-        <Chatbot />
-        {this.state.showHideComponentChatbot ? null :
-          <ButtonShowMoreC clickSelectedChatbot={this.handleShowMoreClickChatbot} />
-        }
-        {this.state.showHideComponentChatbot ?
-          <>
-            <Chatbot_SubpageOne classAnimationChatbot={this.state.classAnimationChatbot} />
-            <Chatbot_SubpageTwo classAnimationChatbot={this.state.classAnimationChatbot} />
-            <ButtonShowLessC clickSelectedChatbot={this.handleShowLessClickChatbot} />
-          </> : null}
-        <Video />
-        <Contact />
+  return (
+
+    <>
+      <Navigation />
+      <Choice />
+      <MMdE />
+      <ButtonShowMoreM clickSelectedMMdE={handleShowMoreClickMMdE} />
+      {transitions.map(({ item, key, props }) =>
+        item && <animated.div key={key} style={props}>
+          <MMdE_Slider />
+          <MMdE_SubpageThree />
+        </animated.div>
+      )}
 
 
-      </>
-    )
-  }
-}
-
-
+      <Chatbot />
+      <Chatbot_SubpageOne />
+      <Chatbot_SubpageTwo />
+      <Video />
+      <Contact />
+    </>
+  );
+};
 
 
 
 
 export default App;
+
+
+
+
+
+
+
+
