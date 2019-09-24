@@ -27,7 +27,6 @@ class Navigation extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
 
-            console.log(arr)
 
             return (
                 <>

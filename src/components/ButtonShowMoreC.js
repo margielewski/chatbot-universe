@@ -13,10 +13,7 @@ class ButtonShowMoreC extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='ButtonShowMore__text'>
-                                            <button className='text__button' onClick={() => displayGreeting(a => {
-                                                console.log(a)
-                                                return true
-                                            })}>Zobacz więcej</button>
+                                            <button className='text__button' onClick={this.props.clickSelectedChatbot.bind(null, true)}>Zobacz więcej</button>
 
                                         </div>
 

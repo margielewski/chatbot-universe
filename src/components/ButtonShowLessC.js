@@ -12,10 +12,7 @@ class ButtonShowLessC extends Component {
                             <div className='row'>
                                 <div className='col-12'>
                                     <div className='ButtonShowLess__text'>
-                                        <button className='text__button' onClick={() => displayGreeting(a => {
-                                            console.log(a)
-                                            return false
-                                        })}>Zobacz mniej</button>
+                                        <button className='text__button' onClick={this.props.clickSelectedChatbot.bind(null, false)}>Zobacz mniej</button>
 
                                     </div>
 
