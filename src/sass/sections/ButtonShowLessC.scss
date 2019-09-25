@@ -1,0 +1,41 @@
+.ButtonShowLessC__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.02rem;
+
+
+    span,
+    .text__button {
+        // 
+        color: $text-color-white;
+        background-color: $text-color-blue;
+
+
+        border: 2px solid $text-color-violet;
+        border-radius: 5px;
+
+    }
+
+    .text__arrows {
+        color: $text-color-violet;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        margin:15px 0;
+
+
+        .fa:nth-of-type(2) {
+            transform: translateY(-10px)
+        }
+    }
+
+    .text__button {
+        color: $text-color-violet;
+        background-color: $background-color1;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

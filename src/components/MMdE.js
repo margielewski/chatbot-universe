@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 class MMdE extends Component {
     state = {
@@ -81,10 +81,7 @@ class MMdE extends Component {
                                                 <span><strong>{arr[2]}</strong> {arr[3]}</span>
                                                 <span>{arr[4]} <strong> {arr[5]} </strong> </span>
                                                 <span><strong>{arr[6]}</strong> {arr[7]}</span>
-                                                <div className='text__arrows'>
-                                                    <FontAwesomeIcon icon={faChevronDown} />
-                                                    <FontAwesomeIcon icon={faChevronDown} />
-                                                </div>
+
                                             </div>
 
                                         </div>
