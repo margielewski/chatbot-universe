@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 class ButtonShowMoreM extends Component {
 
     render() {
@@ -12,7 +13,11 @@ class ButtonShowMoreM extends Component {
                             <section className='ButtonShowMore'>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <div className='ButtonShowMore__text'>
+                                        <div className='ButtonShowMoreM__text'>
+                                            <div className='text__arrows'>
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </div>
                                             <button className='text__button' onClick={this.props.clickSelectedMMdE.bind(null, true)}>Zobacz więcej</button>
 
                                         </div>

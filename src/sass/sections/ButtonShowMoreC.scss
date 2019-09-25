@@ -1,4 +1,4 @@
-.ButtonShowLess__text {
+.ButtonShowMoreC__text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,17 +12,17 @@
         background-color: $text-color-blue;
 
 
-        border: 2px solid $text-color-blue;
+        border: 2px solid $text-color-violet;
         border-radius: 5px;
 
     }
 
     .text__arrows {
-        color: $text-color-blue;
+        color: $text-color-violet;
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-
+margin-bottom:15px; 
 
         .fa:nth-of-type(2) {
             transform: translateY(-10px)
@@ -30,7 +30,7 @@
     }
 
     .text__button {
-        color: $text-color-blue;
+        color: $text-color-violet;
         background-color: $background-color1;
         text-transform: uppercase;
         font-weight: 800;
