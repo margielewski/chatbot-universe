@@ -52,7 +52,7 @@ class Choice extends Component {
 
                                         </div>
                                     </section>
-
+                                    {/* animacja */}
                                 </div>
                             </div>
                         </div>
