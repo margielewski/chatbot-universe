@@ -37,6 +37,7 @@ import ButtonShowLessC from './components/ButtonShowLessC';
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Video from './components/Video';
+import { NONAME } from "dns";
 
 
 class App extends Component {
