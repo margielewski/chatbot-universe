@@ -3,6 +3,7 @@
 
 @import "./sass/settings/all";
 @import "./sass/settings/colors";
+@import "./sass/general/animations";
 
 @import "./sass/sections/Navigation.scss";
 @import "./sass/sections/Choice.scss";
@@ -13,8 +14,10 @@
 @import "./sass/sections/MMdE_SubpageThree.scss";
 @import "./sass/sections/Chatbot_SubpageOne.scss";
 @import "./sass/sections/Chatbot_SubpageTwo.scss";
-@import "./sass/sections/ButtonShowMore.scss";
-@import "./sass/sections/ButtonShowLess.scss";
+@import "./sass/sections/ButtonShowMoreC.scss";
+@import "./sass/sections/ButtonShowLessC.scss";
+@import "./sass/sections/ButtonShowMoreM.scss";
+@import "./sass/sections/ButtonShowLessM.scss";
 
 
 @import "./sass/sections/Chatbot.scss";

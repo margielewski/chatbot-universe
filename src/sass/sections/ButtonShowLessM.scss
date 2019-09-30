@@ -1,4 +1,4 @@
-.ButtonShowMore__text {
+.ButtonShowLessM__text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-
+margin:15px 0;
 
         .fa:nth-of-type(2) {
             transform: translateY(-10px)

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -24,7 +23,6 @@ class Chatbot extends Component {
         } else {
             const { content } = this.state;
             const arr = content.map(i => i.title);
-            console.log(arr);
 
             return (
                 <>
@@ -35,12 +33,12 @@ class Chatbot extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='Chatbot__description'>
-                                                <h1 className='Chatbot__title'>Chatbot</h1>
-                                                <h2 className='Chatbot__subtitle'>Wirtualny asystent dla twojej firmy</h2>
+                                                <h1 className='Chatbot__title' data-aos="fade-right">Chatbot</h1>
+                                                <h2 className='Chatbot__subtitle' data-aos="fade-left">Wirtualny asystent dla twojej firmy</h2>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='Chatbot__scheme'>
+                                    <div className='Chatbot__scheme' data-aos="zoom-in">
 
                                         <div className='row'>
                                             <div className='col-6'>
@@ -59,14 +57,10 @@ class Chatbot extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='Chatbot__text'>
-                                                <span>{arr[2]}<strong> 24/7</strong></span>
-                                                <span>{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
-                                                <span><strong>{arr[6]}</strong> {arr[7]}</span>
-                                                <div className='text__arrows'>
-                                                    <FontAwesomeIcon icon={faChevronDown} />
-                                                    <FontAwesomeIcon icon={faChevronDown} />
-                                                </div>
-                                                <button className='text__button'>Zobacz więcej</button>
+                                                <span data-aos="fade-right">{arr[2]}<strong> 24/7</strong></span>
+                                                <span data-aos="fade-left">{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
+                                                <span data-aos="fade-right"><strong>{arr[6]}</strong> {arr[7]}</span>
+
                                             </div>
 
                                         </div>

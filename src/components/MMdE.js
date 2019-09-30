@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import { Spring } from 'react-spring/renderprops'
 // import { Link, } from 'react-router-dom';
 // import { Link, animateScroll as scroll } from "react-scroll";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 class MMdE extends Component {
     state = {
@@ -25,12 +25,12 @@ class MMdE extends Component {
 
     }
     render() {
+
         if (this.state.content == null) {
             return null;
         } else {
             const { content } = this.state;
             const arr = content.map(i => i.title);
-            console.log(arr)
             return (
                 <>
                     <div className='container'>
@@ -41,33 +41,8 @@ class MMdE extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='MMdE__description'>
-                                                <Spring
-                                                    from={{ opacity: 0, marginRight: -500 }}
-                                                    to={{ opacity: 1, marginRight: 0 }}
-                                                    config={{ delay: 3000, duration: 500 }}
-                                                >
-                                                    {props => (
-                                                        <div style={props}>
-                                                            <h1 className='MMdE__title'>{arr[0]}</h1>
-                                                        </div>
-                                                    )}
-                                                </Spring>
-
-                                                <Spring
-                                                    from={{ opacity: 0, marginLeft: -500 }}
-                                                    to={{ opacity: 1, marginLeft: 0 }}
-                                                    config={{ delay: 3000, duration: 500 }}
-                                                >
-                                                    {props => (
-                                                        <div style={props}>
-
-                                                            <h2 className='MMdE__subtitle'>{arr[1]}</h2>
-
-                                                        </div>
-                                                    )}
-                                                </Spring>
-
-
+                                                <h1 className='MMdE__title' data-aos="fade-right">{arr[0]}</h1>
+                                                <h2 className='MMdE__subtitle' data-aos="fade-left">{arr[1]}</h2>
                                             </div>
                                         </div>
                                     </div>
@@ -105,13 +80,10 @@ class MMdE extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='MMdE__text'>
-                                                <span><strong>{arr[2]}</strong> {arr[3]}</span>
-                                                <span>{arr[4]} <strong> {arr[5]} </strong> </span>
-                                                <span><strong>{arr[6]}</strong> {arr[7]}</span>
-                                                <div className='text__arrows'>
-                                                    <FontAwesomeIcon icon={faChevronDown} />
-                                                    <FontAwesomeIcon icon={faChevronDown} />
-                                                </div>
+                                                <span data-aos="fade-right"><strong>{arr[2]}</strong> {arr[3]}</span>
+                                                <span data-aos="fade-left">{arr[4]} <strong> {arr[5]} </strong> </span>
+                                                <span data-aos="fade-right"><strong>{arr[6]}</strong> {arr[7]}</span>
+
                                             </div>
 
                                         </div>
@@ -128,13 +100,6 @@ class MMdE extends Component {
     }
 }
 
-// const SchemeList = [
-//     {
-//         description: ["zwiększenie sprzedaży/ konwersji sklepu", "pozyskiwanie subskrybentów", "wysyłanie wiadomości do subskrybentów"],
-//         foto: ["../../assets/images/MM_ikona-1.png", "../../assets/images/MM_ikona-2.png", "../../assets/images/MM_ikona-3.png"]
-//     }
-// ]
-
 class CircleTextUp extends Component {
     render() {
 
@@ -142,8 +107,8 @@ class CircleTextUp extends Component {
             <>
                 <div className='row'>
                     <div className='col-12'>
-                        <div className='Scheme'>
-                            <span className='Scheme__description'>{this.props.description}</span>
+                        <div className='Scheme' data-aos="zoom-in">
+                            <span className='Scheme__description' >{this.props.description}</span>
                             <div className='Scheme__foto'>
                                 <img className='foto__ikona' alt='MM_ikona' src={this.props.src} />
                                 <img className='foto__obramowanie' alt='MM_ikona' src="images/MM_obramowanie.png" />
@@ -163,7 +128,7 @@ class CircleTextDown extends Component {
             <>
                 <div className='row'>
                     <div className='col-12'>
-                        <div className='Scheme'>
+                        <div className='Scheme' data-aos="zoom-in">
                             <div className='Scheme__foto'>
                                 <img className='foto__ikona' alt='MM_ikona' src={this.props.src} />
                                 <img className='foto__obramowanie' alt='MM_ikona' src="images/MM_obramowanie.png" />
