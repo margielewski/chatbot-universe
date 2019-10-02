@@ -19,7 +19,7 @@ const properties = {
 class MMdE_Slider extends Component {
     render() {
         return (
-            <>
+            <section className="contShadow">
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
@@ -59,7 +59,7 @@ class MMdE_Slider extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </section>
         )
     }
 }

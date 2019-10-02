@@ -7,7 +7,7 @@ class Chatbot_SubpageTwo extends Component {
 
     render() {
         return (
-            <>
+            <section className="contShadow">
 
                 <div className='container'>
                     <div className='row'>
@@ -36,7 +36,7 @@ class Chatbot_SubpageTwo extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </section>
         )
     }
 }

@@ -6,7 +6,7 @@ class ButtonShowLessC extends Component {
     render() {
         // console.log(this.props.display)
         return (
-            <div className='container'>
+            <div className='container contShadow'>
                 <div className='row'>
                     <div className='col-12'>
                         <section className='ButtonShowLess'>

@@ -9,7 +9,7 @@ import React, { Component } from "react";
 class MMdE_Chart extends Component {
     render() {
         return (
-            <>
+            <section className="contShadow">
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
@@ -53,7 +53,7 @@ class MMdE_Chart extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </section>
         )
     }
 }
@@ -62,7 +62,7 @@ class CircleTextDown extends Component {
     render() {
 
         return (
-            <>
+            <section>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='Scheme'>
@@ -74,7 +74,7 @@ class CircleTextDown extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </section>
         )
     }
 }

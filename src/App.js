@@ -100,8 +100,8 @@ const Home = () => {
   }
   return (
     <>
-      <Navigation />
-      <Choice />
+      <Navigation className="contShadow" />
+      <Choice className="contShadow" />
       <MMdE />
       {hideShowM ? <ButtonShowMoreM clickSelectedMMdE={handleShowMoreClickMMdE} /> : null}
       {transitions.map(({ item, key, props }) =>

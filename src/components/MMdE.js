@@ -32,7 +32,7 @@ class MMdE extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
             return (
-                <>
+                <section className="contShadow">
                     <div className='container'>
                         <div className='row'>
                             <div className='col-12'>
@@ -94,7 +94,7 @@ class MMdE extends Component {
                         </div>
                     </div>
 
-                </>
+                </section>
             )
         }
     }
