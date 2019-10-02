@@ -94,12 +94,12 @@ export default Choice;
 
 //
 
-{/* <Spring>
-    {props => (
-        <div style={props}>
+// {/* <Spring>
+//     {props => (
+//         <div style={props}>
 
-            tutaj wklejamy co chcemy animować
-       
-         </div>
-    )}
-</Spring>  */}
+//             tutaj wklejamy co chcemy animować
+
+//          </div>
+//     )}
+// </Spring>  */}
