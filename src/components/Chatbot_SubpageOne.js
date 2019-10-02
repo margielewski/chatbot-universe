@@ -7,7 +7,7 @@ import React, { Component } from "react";
 class Chatbot_SubpageOne extends Component {
     render() {
         return (
-            <>
+            <section className="contShadow">
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12'>
@@ -37,7 +37,7 @@ class Chatbot_SubpageOne extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </section>
         )
     }
 }

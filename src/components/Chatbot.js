@@ -25,7 +25,7 @@ class Chatbot extends Component {
             const arr = content.map(i => i.title);
 
             return (
-                <>
+                <section className="contShadow">
                     <div className='container'>
                         <div className='row'>
                             <div className='col-12'>
@@ -71,7 +71,7 @@ class Chatbot extends Component {
                         </div>
                     </div>
 
-                </>
+                </section>
             )
         }
     }
