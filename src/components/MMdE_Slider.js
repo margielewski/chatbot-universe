@@ -34,8 +34,8 @@ class MMdE_Slider extends Component {
                                 </div>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <div className="container_Slider" data-aos="zoom-in">
-                                            <Slide {...properties}>
+                                        <div className="container_Slider" data-aos="zoom-in" data-aos-offset="300">
+                                            <Slide {...properties} id="showMe">
                                                 <div className="each-slide">
                                                     <div>
                                                         <img src={img1} alt="img1" />

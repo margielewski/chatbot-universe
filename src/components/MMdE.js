@@ -61,7 +61,7 @@ class MMdE extends Component {
                                             <div className='col-6'>
                                                 <div className='Scheme-second'>
                                                     <CircleTextDown description="pozyskiwanie subskrybentów" src="images/MM_ikona-2.png" />
-                                                    <div className='Scheme-first__arrows'>
+                                                    <div className='Scheme-first__arrows' data-aos="zoom-in" id="anchoringXXX">
                                                         <FontAwesomeIcon icon={faChevronRight} /><FontAwesomeIcon icon={faChevronRight} />
                                                     </div>
                                                 </div>
@@ -69,7 +69,7 @@ class MMdE extends Component {
                                             <div className='col-6'>
                                                 <div className='Scheme-third'>
                                                     <CircleTextDown description="wysyłanie wiadomości do subskrybentów" src="images/MM_ikona-3.png" />
-                                                    <div className='Scheme-first__arrows'>
+                                                    <div className='Scheme-first__arrows' data-aos="zoom-in" id="anchoringXXX">
                                                         <FontAwesomeIcon icon={faChevronRight} /><FontAwesomeIcon icon={faChevronRight} />
                                                     </div>
                                                 </div>

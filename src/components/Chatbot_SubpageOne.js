@@ -15,8 +15,11 @@ class Chatbot_SubpageOne extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='Chatbot_SubpageOne__description'>
-                                            <h1 className='Chatbot_SubpageOne__title' data-aos="fade-right">Chatbot wyzwalany komentarzami pod postem</h1>
-                                            <div className='Chatbot_SubpageOne__text' data-aos="fade-left">
+                                            <h1 className='Chatbot_SubpageOne__title'
+                                                data-aos="fade-right" id="anchoring3" data-aos-anchor="#showChatbotSubpageOne">
+                                                Chatbot wyzwalany komentarzami pod postem</h1>
+                                            <div className='Chatbot_SubpageOne__text'
+                                                data-aos="fade-left" id="anchoring3" data-aos-anchor="#showChatbotSubpageOne">
                                                 <span>Interakcja z użytkownikiem <strong>_24/7</strong></span>
                                             </div>
                                         </div>
@@ -24,7 +27,7 @@ class Chatbot_SubpageOne extends Component {
                                 </div>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <div className="Chatbot_SubpageOne_graphics">
+                                        <div className="Chatbot_SubpageOne_graphics" id="showChatbotSubpageTwo">
                                             <img className='graphics' data-aos="zoom-in" data-aos-delay="1500" alt='MM_ikona' src="images/Chatbot_SubpageOne/telefon_11.png" />
                                             <img className='graphics' data-aos="zoom-in" data-aos-delay="2000" alt='MM_ikona' src="images/Chatbot_SubpageOne/telefon_10.png" />
                                         </div>
