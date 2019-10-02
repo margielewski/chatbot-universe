@@ -14,17 +14,14 @@ class ButtonShowMoreC extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='ButtonShowMoreC__text'>
-                                            <div className='text__arrows'>
+                                            <div className='text__arrows' data-aos="fade-up">
                                                 <FontAwesomeIcon icon={faChevronDown} />
                                                 <FontAwesomeIcon icon={faChevronDown} />
                                             </div>
-                                            <button className='text__button' onClick={this.props.clickSelectedChatbot.bind(null, true)}>Zobacz więcej</button>
-
+                                            <button className='text__button' data-aos="fade-up" onClick={this.props.clickSelectedChatbot.bind(null, true)}>Zobacz więcej</button>
                                         </div>
-
                                     </div>
                                 </div>
-
                             </section>
                         </div>
                     </div>

@@ -27,14 +27,14 @@ class MMdE_Slider extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='MMdE_Slider__description'>
-                                            <h1 className='MMdE_Slider__title'>Zwiększenie konwersji z użyciem Messengera</h1>
-                                            <h2 className='MMdE_Slider__subtitle'>Wysyłanie powiadomień o porzuconym koszyku w sklepie online</h2>
+                                            <h1 className='MMdE_Slider__title' data-aos="fade-right">Zwiększenie konwersji z użyciem Messengera</h1>
+                                            <h2 className='MMdE_Slider__subtitle' data-aos="fade-left">Wysyłanie powiadomień o porzuconym koszyku w sklepie online</h2>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <div className="container_Slider">
+                                        <div className="container_Slider" data-aos="zoom-in">
                                             <Slide {...properties}>
                                                 <div className="each-slide">
                                                     <div>

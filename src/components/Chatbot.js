@@ -33,12 +33,12 @@ class Chatbot extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='Chatbot__description'>
-                                                <h1 className='Chatbot__title'>Chatbot</h1>
-                                                <h2 className='Chatbot__subtitle'>Wirtualny asystent dla twojej firmy</h2>
+                                                <h1 className='Chatbot__title' data-aos="fade-right">Chatbot</h1>
+                                                <h2 className='Chatbot__subtitle' data-aos="fade-left">Wirtualny asystent dla twojej firmy</h2>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='Chatbot__scheme'>
+                                    <div className='Chatbot__scheme' data-aos="zoom-in">
 
                                         <div className='row'>
                                             <div className='col-6'>
@@ -57,9 +57,9 @@ class Chatbot extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='Chatbot__text'>
-                                                <span>{arr[2]}<strong> 24/7</strong></span>
-                                                <span>{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
-                                                <span><strong>{arr[6]}</strong> {arr[7]}</span>
+                                                <span data-aos="fade-right">{arr[2]}<strong> 24/7</strong></span>
+                                                <span data-aos="fade-left">{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
+                                                <span data-aos="fade-right"><strong>{arr[6]}</strong> {arr[7]}</span>
 
                                             </div>
 

@@ -14,11 +14,11 @@ class ButtonShowLessM extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='ButtonShowLessM__text'>
-                                            <div className='text__arrows'>
+                                            <div className='text__arrows' data-aos="fade-up">
                                                 <FontAwesomeIcon icon={faChevronUp} />
                                                 <FontAwesomeIcon icon={faChevronUp} />
                                             </div>
-                                            <button className='text__button' onClick={this.props.clickSelectedMMdE.bind(null, false)}>Zobacz mniej</button>
+                                            <button className='text__button' data-aos="fade-up" onClick={this.props.clickSelectedMMdE.bind(null, false)}>Zobacz mniej</button>
 
                                         </div>
 

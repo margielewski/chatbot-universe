@@ -16,10 +16,10 @@ class Chatbot_SubpageTwo extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='Chatbot_SubpageTwo__description'>
-                                            <h1 className='Chatbot_SubpageTwo__title'>Interakcja z użytkownikiem poprzez quizy spersonalizowane oferty</h1>
+                                            <h1 className='Chatbot_SubpageTwo__title' data-aos="fade-right">Interakcja z użytkownikiem poprzez quizy spersonalizowane oferty</h1>
                                             <div className='Chatbot_SubpageTwo__text'>
-                                                <span><strong>quiz lub test preferencjipomagający wybrać produkt</strong></span>
-                                                <span><strong>przedstawienie oferty w wybrany sposób</strong></span>
+                                                <span data-aos="fade-left"><strong>quiz lub test preferencjipomagający wybrać produkt</strong></span>
+                                                <span data-aos="fade-right"><strong>przedstawienie oferty w wybrany sposób</strong></span>
                                             </div>
                                         </div>
                                     </div>
@@ -27,8 +27,8 @@ class Chatbot_SubpageTwo extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className="Chatbot_SubpageTwo_graphics">
-                                            <img className='graphics' alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_13.png" />
-                                            <img className='graphics' alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_12.png" />
+                                            <img className='graphics' data-aos="zoom-in" data-aos-delay="1500" alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_13.png" />
+                                            <img className='graphics' data-aos="zoom-in" data-aos-delay="2000" alt='MM_ikona' src="images/Chatbot_SubpageTwo/telefon_12.png" />
                                         </div>
                                     </div>
                                 </div>
