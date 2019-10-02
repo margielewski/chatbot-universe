@@ -41,7 +41,7 @@ class Choice extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
             return (
-                <>
+                <section>
                     {/* <Spring
                         from={{ opacity: 0, marginTop: -500, scroll: 100 }}
                         to={{ opacity: 1, marginTop: 0, scroll: 200 }}
@@ -83,7 +83,7 @@ class Choice extends Component {
                     {/* </div>
                         )}
                     </Spring> */}
-                </>
+                </section>
             )
         }
     }

@@ -25,7 +25,7 @@ class Contact extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
             return (
-                <>
+                <section>
                     <div className='Contact__bgc-resizer'>
                         <div className='Contact__bgc'>
                             <div className='container'>
@@ -56,7 +56,7 @@ class Contact extends Component {
                         </div>
                     </div>
 
-                </>
+                </section>
             )
         }
     }
