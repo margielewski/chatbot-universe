@@ -30,8 +30,9 @@ class Choice extends Component {
                                     <section className='Choice'>
                                         <div className='Mobile' data-aos="fade-up">
                                             <div className='Mobile__chat'>
-                                                <img className='chat__custom-chat' alt='ikonka rakieta niebieska' src="images/custom-chat.png" />
-                                                <img className='chat__logo' alt='ikonka rakieta niebieska' src="images/cbot1.svg" />
+                                                <img className='chat__custom-chat' alt='ikonka mess' src="images/custom-chat.png"
+                                                    data-aos="zoom-in" data-aos-delay="2000" />
+                                                <img className='chat__logo' alt='ikonka logo' src="images/cbot1.svg" />
 
                                                 <span className='chat__q1'>{arr[0]}
                                                     <img className='a1__rocket' alt='ikonka rakieta niebieska' src="images/rakieta_niebieska.png" />
