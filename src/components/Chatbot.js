@@ -56,7 +56,7 @@ class Chatbot extends Component {
 
                                     <div className='row'>
                                         <div className='col-12'>
-                                            <div className='Chatbot__text'>
+                                            <div className='Chatbot__text' id="showChatbotSubpageOne">
                                                 <span data-aos="fade-right">{arr[2]}<strong> 24/7</strong></span>
                                                 <span data-aos="fade-left">{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
                                                 <span data-aos="fade-right"><strong>{arr[6]}</strong> {arr[7]}</span>

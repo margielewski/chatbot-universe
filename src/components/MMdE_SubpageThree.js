@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 
-// import img1 from "./../assets/images/slider/telefon_1.png"
-// import img2 from "./../assets/images/slider/telefon_2.png"
-// import img3 from "./../assets/images/slider/telefon_3.png"
-
 class MMdE_SubpageThree extends Component {
     render() {
         return (
@@ -15,21 +11,31 @@ class MMdE_SubpageThree extends Component {
                                 <div className='row'>
                                     <div className='col-12'>
                                         <div className='MMdE_SubpageThree__description'>
-                                            <h1 className='MMdE_SubpageThree__title' data-aos="fade-right">Asystent dostępny 24/7, automatyzacja najczęstszych pytań</h1>
-                                            {/* <h2 className='MMdE_SubpageThree__subtitle'>stworzeniu zestawu proponowanych pytań z odpowiedzią na każde z nich</h2> */}
+                                            <h1 className='MMdE_SubpageThree__title'
+                                                id="anchoring" data-aos-anchor="#showMe" data-aos="fade-right" data-aos-offset="800">
+                                                Asystent dostępny 24/7, automatyzacja najczęstszych pytań
+                                                </h1>
+
                                             <div className='MMdE_SubpageThree__text'>
-                                                <span data-aos="fade-left"><strong>stworzeniu zestawu proponowanych pytań z odpowiedzią na każde z nich</strong></span>
-                                                <span data-aos="fade-right"><strong>automatyzacji pytań w formie tekstowej przy użyciu przetwarzania języka naturalnego (NLP)</strong></span>
+                                                <span
+                                                    id="anchoring" data-aos-anchor="#showMe" data-aos="fade-left" data-aos-offset="800">
+                                                    <strong>stworzeniu zestawu proponowanych pytań z odpowiedzią na każde z nich</strong></span>
+                                                <span
+                                                    id="anchoring" data-aos-anchor="#showMe" data-aos="fade-right" data-aos-offset="800">
+                                                    <strong>automatyzacji pytań w formie tekstowej przy użyciu przetwarzania języka naturalnego (NLP)</strong></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='row'>
                                     <div className='col-12'>
-                                        <div className="MMdE_SubpageThree_graphics">
-                                            <img className='graphics' data-aos="zoom-in" data-aos-delay="1000" alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_9.png" />
-                                            <img className='graphics' data-aos="zoom-in" data-aos-delay="1500" alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_7.png" />
-                                            <img className='graphics' data-aos="zoom-in" data-aos-delay="2000" alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_8.png" />
+                                        <div className="MMdE_SubpageThree_graphics" id="showButtonLessM">
+                                            <img className='graphics'
+                                                id="anchoring" data-aos-anchor="#showMe" data-aos="zoom-in" data-aos-delay="1000" data-aos-offset="800" alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_9.png" />
+                                            <img className='graphics'
+                                                id="anchoring" data-aos-anchor="#showMe" data-aos="zoom-in" data-aos-delay="1500" data-aos-offset="800" alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_7.png" />
+                                            <img className='graphics'
+                                                id="anchoring" data-aos-anchor="#showMe" data-aos="zoom-in" data-aos-delay="2000" data-aos-offset="800" alt='MM_ikona' src="images/MMdE_SubpageThree/telefon_8.png" />
                                         </div>
                                     </div>
                                 </div>

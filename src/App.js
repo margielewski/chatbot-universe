@@ -2,7 +2,6 @@ import React, { Component, useState } from "react";
 import { useTransition, animated } from 'react-spring'
 import { animated as animated2 } from 'react-spring'
 
-
 // import ReactDOM from 'react-dom';
 
 // podpięcie font-awesome
@@ -38,6 +37,15 @@ import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Video from './components/Video';
 import { NONAME } from "dns";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 800,
+  offset: 150,
+  delay: 500,
+});
 
 
 class App extends Component {
