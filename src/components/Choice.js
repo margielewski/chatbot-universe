@@ -50,6 +50,7 @@ class Choice extends Component {
                                                     <img className='a1__rocket' alt='ikonka rakieta niebieska' src="images/rakieta_fiolet.png" />
                                                 </span>
                                             </div>
+                                            <div></div>
                                         </div>
                                     </section>
 
