@@ -22,8 +22,11 @@ class Choice extends Component {
             const { content } = this.state;
             const arr = content.map(i => i.title);
             return (
-                <>
+
+                <section>
+                  
                     <div className='Choice__bgc'>
+
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12'>
@@ -56,10 +59,13 @@ class Choice extends Component {
                         </div>
                     </div>
 
-                </>
+                   
+                </section>
+
             )
         }
     }
 }
 
 export default Choice;
+
