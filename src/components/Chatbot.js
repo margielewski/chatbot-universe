@@ -4,76 +4,57 @@ import React, { Component } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 
 class Chatbot extends Component {
-    state = {
-        content: null,
-    }
-    componentDidMount() {
-        let url = 'http://chatbotest.xyz:1337/Chatbots';
-        fetch(url).then(response => response.json()).then((repos) => {
-            this.setState({
-                content: repos
-            });
 
-        });
-
-    }
     render() {
-        if (this.state.content == null) {
-            return null;
-        } else {
-            const { content } = this.state;
-            const arr = content.map(i => i.title);
-
-            return (
-                <section className="contShadow">
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-12'>
-                                <section className='Chatbot' id='Chatbot'>
-                                    <div className='row'>
-                                        <div className='col-12'>
-                                            <div className='Chatbot__description'>
-                                                <h1 className='Chatbot__title' data-aos="fade-right">Chatbot</h1>
-                                                <h2 className='Chatbot__subtitle' data-aos="fade-left">Wirtualny asystent dla twojej firmy</h2>
-                                            </div>
+        return (
+            <section className="contShadow">
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-12'>
+                            <section className='Chatbot' id='Chatbot'>
+                                <div className='row'>
+                                    <div className='col-12'>
+                                        <div className='Chatbot__description'>
+                                            <h1 className='Chatbot__title' data-aos="fade-right">Chatbot</h1>
+                                            <h2 className='Chatbot__subtitle' data-aos="fade-left">Wirtualny asystent dla twojej firmy</h2>
                                         </div>
                                     </div>
-                                    <div className='Chatbot__scheme' data-aos="zoom-in">
-
-                                        <div className='row'>
-                                            <div className='col-6'>
-                                                <div className='Scheme-second'>
-                                                    <CircleTextDown description="automatyzacja procesów" src="images/boty_ikona-2.png" />
-                                                </div>
-                                            </div>
-                                            <div className='col-6'>
-                                                <div className='Scheme-third'>
-                                                    <CircleTextDown description="uatrakcyjnienie marki" src="images/boty_ikona-1.png" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div className='Chatbot__scheme' data-aos="zoom-in">
 
                                     <div className='row'>
-                                        <div className='col-12'>
-                                            <div className='Chatbot__text' id="showChatbotSubpageOne">
-                                                <span data-aos="fade-right">{arr[2]}<strong> 24/7</strong></span>
-                                                <span data-aos="fade-left">{arr[3]} <strong> {arr[4]} </strong> {arr[5]} </span>
-                                                <span data-aos="fade-right"><strong>{arr[6]}</strong> {arr[7]}</span>
-
+                                        <div className='col-6'>
+                                            <div className='Scheme-second'>
+                                                <CircleTextDown description="automatyzacja procesów" src="images/boty_ikona-2.png" />
                                             </div>
-
+                                        </div>
+                                        <div className='col-6'>
+                                            <div className='Scheme-third'>
+                                                <CircleTextDown description="uatrakcyjnienie marki" src="images/boty_ikona-1.png" />
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                </section>
-                            </div>
+                                <div className='row'>
+                                    <div className='col-12'>
+                                        <div className='Chatbot__text' id="showChatbotSubpageOne">
+                                            <span data-aos="fade-right">pozostajesz w kontakcie z klientem<strong> 24/7</strong></span>
+                                            <span data-aos="fade-left">wprowadzasz <strong> interaktywną formę komunikacji </strong> (konkursy, wyzwania, ankiety) </span>
+                                            <span data-aos="fade-right"><strong>personalizujesz</strong> relację z klientem</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
                         </div>
                     </div>
+                </div>
 
-                </section>
-            )
-        }
+            </section>
+        )
+
     }
 }
 

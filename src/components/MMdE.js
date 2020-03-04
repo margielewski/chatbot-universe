@@ -7,30 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 class MMdE extends Component {
-    state = {
-        content: null,
-    }
-
-    componentDidMount() {
-        let url = 'http://chatbotest.xyz:1337/Mmdes';
-        fetch(url).then(response => response.json()).then((repos) => {
-
-
-            this.setState({
-                content: repos
-            });
-
-        }).catch(error => console.error('Error:', error));
-
-
-    }
+   
     render() {
 
-        if (this.state.content == null) {
-            return null;
-        } else {
-            const { content } = this.state;
-            const arr = content.map(i => i.title);
             return (
                 <section className="contShadow">
                     <div className='container'>
@@ -41,8 +20,8 @@ class MMdE extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='MMdE__description'>
-                                                <h1 className='MMdE__title' data-aos="fade-right">{arr[0]}</h1>
-                                                <h2 className='MMdE__subtitle' data-aos="fade-left">{arr[1]}</h2>
+                                                <h1 className='MMdE__title'>Messenger Marketing dla Ecomers</h1>
+                                                <h2 className='MMdE__subtitle'>Korzyści_jak działa?</h2>
                                             </div>
                                         </div>
                                     </div>
@@ -80,10 +59,9 @@ class MMdE extends Component {
                                     <div className='row'>
                                         <div className='col-12'>
                                             <div className='MMdE__text'>
-                                                <span data-aos="fade-right"><strong>{arr[2]}</strong> {arr[3]}</span>
-                                                <span data-aos="fade-left">{arr[4]} <strong> {arr[5]} </strong> </span>
-                                                <span data-aos="fade-right"><strong>{arr[6]}</strong> {arr[7]}</span>
-
+                                                <span data-aos="fade-right"><strong>docierasz do klientów </strong> w miejscu, w którym umawiają się na spotkania</span>
+                                                <span data-aos="fade-left">segmentujesz klientów <strong> badając ich reakcję </strong> </span>
+                                                <span data-aos="fade-right"><strong>personalizujesz wiadomość</strong> swoich odbiorców</span>
                                             </div>
 
                                         </div>
@@ -96,7 +74,7 @@ class MMdE extends Component {
 
                 </section>
             )
-        }
+        
     }
 }
 
