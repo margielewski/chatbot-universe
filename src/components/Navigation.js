@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import logoIkonka from '../assets/images/logo-ikonka.png'
 
 class Navigation extends Component {

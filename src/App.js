@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { useTransition, animated } from 'react-spring'
 import { animated as animated2 } from 'react-spring'
 
@@ -25,7 +25,7 @@ import Choice from "./components/Choice";
 
 import MMdE from "./components/MMdE";
 import MMdE_Slider from "./components/MMdE_Slider";
-import MMdE_Chart from "./components/MMdE_Chart";
+
 import MMdE_SubpageThree from "./components/MMdE_SubpageThree";
 import Chatbot_SubpageOne from "./components/Chatbot_SubpageOne";
 import Chatbot_SubpageTwo from "./components/Chatbot_SubpageTwo";
@@ -36,7 +36,7 @@ import ButtonShowLessC from './components/ButtonShowLessC';
 import Chatbot from "./components/Chatbot";
 import Contact from "./components/Contact";
 import Video from './components/Video';
-import { NONAME } from "dns";
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {faChevronDown } from "@fortawesome/free-solid-svg-icons";
 class ButtonShowMoreC extends Component {
 
     render() {
